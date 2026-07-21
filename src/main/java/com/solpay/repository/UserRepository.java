@@ -1,4 +1,4 @@
-package com.solpay.backend.repository;
+package com.solpay.repository;
 
 import com.solpay.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -10,4 +10,5 @@ public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findByEmail(String email);
 
     boolean existsByEmail(String email);
+
 }
